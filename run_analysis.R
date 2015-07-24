@@ -66,13 +66,13 @@ library(reshape2)
 activites.molten <- melt(data = all.activities, 
                          id = c("subject","activity.name"),
                          measure.vars = colnames(all.activities[,grep("mean[(][)]|std[(][)]", colnames(all.activities))]))
-str(activites.molten)
+# str(activites.molten)
 
 # 4.2 calculate mean value by by subject and activity while casting molten dataframe into multiple variable dataframe
 activities.avg <- dcast(activites.molten, subject + activity.name ~ variable, mean)
-str(activities.avg)
+# str(activities.avg)
 
-head(activities.avg, 10)
+# head(activities.avg, 10)
 
 # 4.3 Rename columns to indicate that those are averages
 names(activities.avg)[3: ncol(activities.avg)] <- paste(names(activities.avg)[3: ncol(activities.avg)], "avg", sep = ".")
