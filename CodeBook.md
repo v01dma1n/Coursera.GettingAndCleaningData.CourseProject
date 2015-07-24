@@ -23,25 +23,27 @@ Example:
 Input data
 ----------
 
-<b>Test data:</b>  
+<b>Test data:</b> in directory ./data/test  
   subject_test.txt  
   X_test.txt  
-<b>Training data:</b>  
+  y_test.txt  
+<b>Training data:</b> in directory ./data/train  
   subject_train.txt  
   X_train.txt  
-<b>Data variable names:</b>  
+  y_train.txt  
+<b>Data variable names:</b> in directory ./data  
   features.txt  
-<b>Activity descriptive name map:</b>  
+<b>Activity descriptive name map:</b> in directlry ./data  
   activity_labels.txt  
 
 Output data
 -----------
-<b>File Name:</b>
+<b>File Name:</b> in directory ./data  
   subject.activity.avg.txt
 
 
 subject <i>- subject id (numeric)</i>  
-activity.name  <i>- descriptive name of subject's activity</i>  
+activity.name  <i>- descriptive name of subject's activity (character)</i>  
 tBodyAcc-mean()-X.avg  
 tBodyAcc-std()-X.avg  
 tBodyAcc-mean()-Y.avg  

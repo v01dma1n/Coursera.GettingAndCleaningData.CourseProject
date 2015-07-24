@@ -64,15 +64,21 @@ img {
 <div id="feature-selection" class="section level1">
 <h1>Feature Selection</h1>
 <p>The values in this dataset are generated based on the following database:<br /><a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones" class="uri">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a></p>
-<p>Script execution</p>
-<div id="input-files" class="section level2">
-<h2>Input files</h2>
-<p>All input files are expected to be in the same directory as the script</p>
-<p><b>Test data:</b><br /> subject_test.txt<br /> X_test.txt<br /><b>Training data:</b><br /> subject_train.txt<br /> X_train.txt<br /><b>Data variable names:</b><br /> features.txt<br /><b>Activity descriptive name map:</b><br /> activity_labels.txt</p>
 </div>
-<div id="output-file" class="section level2">
-<h2>Output file</h2>
-<p><b>File Name:</b> subject.activity.avg.txt</p>
+<div id="script-execution" class="section level1">
+<h1>Script execution</h1>
+<div id="input-data" class="section level2">
+<h2>Input data</h2>
+<p><b>Test data:</b> in directory ./data/test<br /> subject_test.txt<br /> X_test.txt<br /> y_test.txt<br /><b>Training data:</b> in directory ./data/train<br /> subject_train.txt<br /> X_train.txt<br /> y_train.txt<br /><b>Data variable names:</b> in directory ./data<br /> features.txt<br /><b>Activity descriptive name map:</b> in directlry ./data<br /> activity_labels.txt</p>
+</div>
+<div id="parameters" class="section level2">
+<h2>Parameters</h2>
+<p>Script does not expect any parameters.</p>
+<p>Data location can be ajusted using the following variable:<br />data.path &lt;- “./Course Project/data/”</p>
+</div>
+<div id="output-data" class="section level2">
+<h2>Output data</h2>
+<p><b>File Name:</b> in directory ./data<br /> subject.activity.avg.txt</p>
 </div>
 <div id="libraries" class="section level2">
 <h2>Libraries</h2>

@@ -7,24 +7,32 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Script execution  
 ================
 
-Input files  
------------
-All input files are expected to be in the same directory as the script  
+Input data
+----------
 
-<b>Test data:</b>  
+<b>Test data:</b> in directory ./data/test  
   subject_test.txt  
   X_test.txt  
-<b>Training data:</b>  
+  y_test.txt  
+<b>Training data:</b> in directory ./data/train  
   subject_train.txt  
   X_train.txt  
-<b>Data variable names:</b>  
+  y_train.txt  
+<b>Data variable names:</b> in directory ./data  
   features.txt  
-<b>Activity descriptive name map:</b>  
-  activity_labels.txt   
+<b>Activity descriptive name map:</b> in directlry ./data  
+  activity_labels.txt  
 
-Output file
+Parameters
+----------
+Script does not expect any parameters.  
+
+Data location can be ajusted using the following variable:  
+data.path <- "./data/"
+
+Output data
 -----------
-<b>File Name:</b>
+<b>File Name:</b> in directory ./data  
   subject.activity.avg.txt
   
   
